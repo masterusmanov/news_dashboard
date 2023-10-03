@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="../images/logo.png" alt="logo"
+                style="width:100px; height: 70px">
+        </a>
+    </nav>
+    <div class="container"><br>
+        <h1 class="text-center m-3">Yangiliklar ro'yhati</h1><br>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Yangilik sarlavhasi</th>
+                    <th>Yangilik matni</th>
+                    <th>Yangilik surati</th>
+                    <th>O'chirish</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+        <a href="../index.html"><button type="button" class="btn btn-danger a1" style="margin: 30px; width: 120px; font-size: 20px; float: right; border-radius: 15px;">Orqaga</button></a>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Ma'lumotlarni yangilash</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="form">
+                        <div class="form-group">
+                            <label for="title">Yangilik sarlavhasi:</label>
+                            <input type="text" class="form-control" name="fio" placeholder="Yangilik sarlavhasi" id="fio">
+                        </div>
+                        <div class="form-group">
+                            <label for="url">Yangilik matni</label>
+                            <input type="text" class="form-control" name="address" placeholder="Matn kiriting!" id="address">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/table.js"></script>
+    
+</body>
+
+</html>
